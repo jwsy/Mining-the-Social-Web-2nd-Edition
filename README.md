@@ -44,10 +44,10 @@ This edition of Mining the Social Web extensively uses [IPython Notebook](http:/
 * [Chapter 5](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter5.ipynb) - Mining Web Pages: Using Natural Language Processing to Understand Human Language, Summarize Blog Posts and More
 * [Chapter 6](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter6.ipynb) - Mining Mailboxes: Analyzing Who's Talking To Whom About What, How Often, and More
 * Chapter 7 - Mining GitHub Social Coding Projects: Inspecting Software Collaboration Habits, Building Interest Graphs, and More
-* Chapter 8 - Mining the Semantically Marked-Up Web: A Cocktail Discussion
+* [Chapter 8](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter8.ipynb) - Mining the Semantically Marked-Up Web: Extracting Microformats, Inferencing Over RDF, and More
 
 ### Part II 
-* Recipes for Mining Twitter
+* [Chapter 9](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter9.ipynb) - Twitter Recipes
 
 ## The _Mining the Social Web_ Virtual Machine Experience
 
@@ -61,6 +61,8 @@ In order to start the virtual machine, there are just a few easy steps to follow
 * Checkout this code repository to your machine using git or with the download links at the top of the main GitHub page.
 * Navigate to the 'vagrant' directory in the checkout
 * Run the following command: <code>vagrant up</code>
+
+**You may benefit from watching this [short ~4 minute screencast](https://www.youtube.com/watch?v=0m0PI9TGf3w) that summarizes the steps involved in getting started.**
 
 A few additional details once the virtual machine is running:
 
