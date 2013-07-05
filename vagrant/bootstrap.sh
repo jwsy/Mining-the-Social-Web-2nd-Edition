@@ -65,6 +65,12 @@ if [ ! -f /home/vagrant/share/vagrant/bootstrap_complete.txt ]; then
     # See also https://github.com/ozgur/python-linkedin/pull/12
     pip install git+git://github.com/ptwobrussell/python-linkedin.git#egg=python-linkedin-ptwobrussell-github
 
+    # Install FuXi per https://code.google.com/p/fuxi/wiki/Installation_Testing
+    pip install http://cheeseshop.python.org/packages/source/p/pyparsing/pyparsing-1.5.5.tar.gz
+    pip install https://fuxi.googlecode.com/hg/layercake-python.tar.bz2
+    pip install https://pypi.python.org/packages/source/F/FuXi/FuXi-1.4.1.production.tar.gz
+
+    # And then there's everything else...
     pip install -r mtsw2e-requirements.txt
 
     # Install a few ancillary packages for NLTK in a central location. See http://nltk.org/data.html
