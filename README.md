@@ -5,31 +5,17 @@ Mining the Social Web (2nd Edition)
 
 The official online compendium for Mining the Social Web, 2nd Edition (O'Reilly, 2013)
 
-_Mining the Social Web, 2nd Edition_ is currently available through O'Reilly Media's Early Access and Rough Cuts programs. The final version of the book will not be complete until the September/October timeframe, but in the meanwhile, you can [get the latest source code here and pre-order a copy of the ebook directly from O'Reilly](http://bit.ly/135dHfs). Pre-ordering through O'Reilly's Early Access program contains a number of great benefits including regular updates as the final manuscript of the book is completed as well as continual updates to the book for life! (And for a book that's built on social web APIs, rest assured that API changes will occasionally require the text of the book and examples to be updated.)
+_Mining the Social Web, 2nd Edition_ is currently available through O'Reilly Media's Early Access and Rough Cuts programs. The final version of the book will not be complete until the September/October timeframe, but in the meanwhile, you can get the latest source code here [and get an Early Access copy of the ebook directly from O'Reilly](http://bit.ly/135dHfs). Pre-ordering through O'Reilly's Early Access program contains a number of great benefits including regular updates as the final manuscript of the book is completed as well as continual updates to the book for life! (And for a book that's built on social web APIs, rest assured that API changes will occasionally require the text of the book and examples to be updated.)
 
-There's an incredible turn-key virtual machine experience for this second edition of the book ([see complete details below](#the-mining-the-social-web-virtual-machine-experience)) that provides you with the ability to explore and run all of the source code in a hassle-free manner. All that you have to do is follow a few simple steps to get the virtual machine installed, and you'll be off to the races. The estimated burden for setting all of this up is about 15 minutes, and it is strongly recommended that you first take advantage of use the virtual machine before attempting to run the samples on your own.
+There's an incredible turn-key virtual machine experience for this second edition of the book that provides you with a powerful social web mining toolbox. This toolbox provides the ability to explore and run all of the source code in a hassle-free manner. All that you have to do is [follow a few simple steps](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/_Appendix A - Virtual Machine Experience.ipynb) to get the virtual machine installed, and you'll be running the example code in as little as 20-30 minutes. (And by the way, most of that time is waiting for files to download.)
 
-_Note that the virtual machine for this book is designed to install every single dependency for you automatically and save you a lot of time, even if you are a fairly sophisticated power user. Please try it out._
+This [short screencast](https://www.youtube.com/watch?v=BTyKPMfi_JQ) demonstrates the steps involved in installing the virtual machine, which installs every single dependency for you automatically and save you a lot of time. Even sophisticated power users tend to prefer using it versus using their own environments.
 
-If you experience any problems at all, file an issue here on GitHub. Be sure to also follow [@SocialWebMining](http://twitter.com/socialwebmining) on Twitter and like http://facebook.com/MiningTheSocialWeb on Facebook.
-
-## Important Note to Virtual Machine Users - 26 July 2013
-
-A significant pull request was merged in on July 26, 2013 around 9pm (CST) that provides an enhancement to the way the book's Vagrant-based virtual machine is configured. If you were an adopter of the book's virtual machine on or before 26 July 2013, you will probably want to do complete the following steps to get in a good spot for moving forward with the code. Hopefully, there will be no more disruptive changes like this one:
-
-* Save any work in IPython Notebook that you don't want to lose by copying the ipynb file to another location
-* `git pull` - Update your repository's code
-* `vagrant destroy` - Kill the existing virtual machine
-* `vagrant plugin install vagrant-berkshelf` - Install a required Vagrant plugin
-* `vagrant up` - Re-bootstrap your virtual machine with Chef-based configuration management. The first bootstrap takes ~20 minutes, which is significantly faster than the previous bootstrapping approach.
-
-This notice will be removed around September 1, after enough folks have had a chance to review it.
-
-Enjoy!
+If you experience any problems at all with installation of the virtual machine, file an issue here on GitHub. Be sure to also follow [@SocialWebMining](http://twitter.com/socialwebmining) on Twitter and like http://facebook.com/MiningTheSocialWeb on Facebook.
 
 ## Preview the IPython Notebooks
 
-This edition of Mining the Social Web extensively uses [IPython Notebook](http://ipython.org/notebook.html) to facilitate the learning and development process, and the best way to preview the source code is with the links below. Chapters that aren't hyperlinked yet will be available as soon as that content is available in the ebook through [O'Reilly Media's Early Access](http://bit.ly/135dHfs). All source code is estimated to appear in this repository by mid-July 2013.
+This edition of _Mining the Social Web_ extensively uses [IPython Notebook](http://ipython.org/notebook.html) to facilitate the learning and development process. If you're interested in what the example code for any particular chapter does, the best way to preview it is with the links below. When you're ready to develop, pull the source for this GitHub repository and follow the instructions for installing the virtual machine to get started.
 
 * [Chapter 0 - Preface](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter 0 - Preface.ipynb)
 * [Chapter 1 - Mining Twitter: Exploring Trending Topics, Discovering What People Are Talking About, and More](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/Chapter 1 - Mining Twitter.ipynb)
@@ -45,17 +31,28 @@ This edition of Mining the Social Web extensively uses [IPython Notebook](http:/
 * [Appendix B - OAuth Primer](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/_Appendix B - OAuth Primer.ipynb)
 * [Appendix C - Python & IPython Notebook Tips](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/_Appendix C - Python & IPython Notebook Tips.ipynb)
 
-## The _Mining the Social Web_ Virtual Machine Experience
+## The _Mining the Social Web_ Virtual Machine
 
-The code for _Mining the Social Web_ is organized by chapter in an [IPython Notebook](http://ipython.org/notebook.html) format to maximize enjoyment of following along with examples as part of an interactive experience. Unfortunately, some of the Python dependencies for the example code can be a little bit tricky to get installed and configured, so providing a completely turn-key virtual machine to make your reading experience as simple and enjoyable as possible is in order. Even if you are a seasoned developer, you may still find some value in using this virtual machine to get started in order to save yourself some time because it's powered with [Vagrant](http://vagrantup.com/), an amazing development tool that you'll probably want to know about and arguably makes working with virtualization even easier than a native [Virtualbox](http://www.virtualbox.org/), VMWare image, etc.  
+_You may enjoy [this short screencast](https://www.youtube.com/watch?v=BTyKPMfi_JQ) that demonstrates the step-by-step instructions involved in installing the book's virtual machine._
 
-You're more interested in following along and learning from the example code than learning how to install and manage system dependencies, right? Just follow the instructions described in  [Appendix A - Virtual Machine Experience](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/_Appendix A - Virtual Machine Experience.ipynb) and streamline you troubles.
+The code for _Mining the Social Web_ is organized by chapter in an [IPython Notebook](http://ipython.org/notebook.html) format to maximize enjoyment of following along with examples as part of an interactive experience. Unfortunately, some of the Python dependencies for the example code can be a little bit tricky to get installed and configured, so providing a completely turn-key virtual machine to make your reading experience as simple and enjoyable as possible is in order. Even if you are a seasoned developer, you may still find some value in using this virtual machine to get started and save yourself some time. The virtual machine is powered with [Vagrant](http://vagrantup.com/), an amazing development tool that you'll probably want to know about and arguably makes working with virtualization even easier than a native [Virtualbox](http://www.virtualbox.org/) or VMWare image.  
 
-You may also enjoy this [short ~4 minute screencast](https://www.youtube.com/watch?v=0m0PI9TGf3w) that summarizes the steps involved in getting started.
+## Quick Start Guide
 
-## Product Description for _Mining the Social Web (2nd Edition)_
+The recommended way of getting started with the example code is by taking advantage of the Vagrant-powered virtual machine as illusrated in [this short screencast](https://www.youtube.com/watch?v=BTyKPMfi_JQ). After all, you're more interested in following along and learning from the examples than installing and managing all of the system dependencies just to get to that point, right? 
 
-The source code in this repository is free for your use whether or not you have a copy of the book, but it does generally assume that you are following along with the book where some valuable explanations and extended discussion of the source code occurs. The book is probably your single best source of support for questions you will have about the code or things that it does. Its product description from the publisher follows:
+[Appendix A - Virtual Machine Experience](http://nbviewer.ipython.org/urls/raw.github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/master/ipynb/_Appendix A - Virtual Machine Experience.ipynb) provides clear step-by-step instructions for installing the virtual machine and is intended to serve as a quick start guide.
+
+
+## The _Mining the Social Web_ Wiki
+
+This project takes advantage of its GitHub repository's [wiki](https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/wiki) to act as a point of collaboration for consumers of the source code. Feel free to use the wiki however you'd like to share your experiences, and create additional pages as needed to curate additional information.
+
+One of the more important wiki pages that you may want to bookmark is the [Advisories](https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition/wiki/Advisories) page, which is an archive of notes about particularly  disruptive commits or other changes that may affect you.
+
+## "Premium Support"
+
+The source code in this repository is free for your use however you'd like. If you'd like to complete a more rigorous study about social web mining much like you would experience by following along with a textbook in a classroom, however, you should consider picking up a copy of [Mining the Social Web](http://bit.ly/135dHfs) and follow along. _Think of the book as offering a form of "premium support" for this open source project._ The publisher's description of the book follows for your convenience:
 
 With this Early Access edition of Mining the Social Web (2nd Ed), you'll get access the author's raw and unedited content as he finishes writing so that you can take advantage of this powerful content long before the official release. You'll be able to influence and shape the final manuscript of the book by leaving the author direct feedback, and you'll also receive updates when significant changes are made, new chapters as they're written, and the final ebook bundle once it's available.
 
